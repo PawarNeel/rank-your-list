@@ -1,0 +1,10 @@
+Jinja Templating:
+{% %}, {{ <python expression> }}
+
+
+To load css/javascript into the html file with jinja:(from static)
+**
+<script
+  type = "text/javascript"
+  src = "{{ url_for('static',filename='index.js') }}"
+></script>
